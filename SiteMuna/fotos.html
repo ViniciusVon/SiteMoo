@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossa História | Álbum de Fotos</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/icon_gatinho.ico" type="image/x-icon">
 </head>
 <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Menu</header>
+        <a href="#" class="active">
+            <i class="fas fa-qrcode"></i>
+            <span>Dashboard</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-link"></i>
+            <span>Links</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-portrait"></i>
+            <span>Carta Pokemón</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-calendar"></i>
+            <span>Eventos</span>
+        </a>
+        <a href="#">
+            <i class="far fa-moon"></i>
+            <span>Contato</span>
+        </a>
+    </div>
     <header class="cabecalho">
         <div class="menu-toggle" id="mobile-menu">
             <span></span>
@@ -14,14 +43,14 @@
             <span></span>
         </div>
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="main.html">Home</a>
             <a class="cabecalho__menu__link" href="sobre_nos.html">Sobre Nós</a>
             <a class="cabecalho__menu__link" href="mo_mentos.html">Mo.mentos</a>
             <a class="cabecalho__menu__link" href="fotos.html">Álbum de Fotos</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+    <main class="apresentacao__fotos">
+        <section class="apresentacao__conteudo__fotos">
             <h1 class="apresentacao__conteudo__titulo">
                 Álbum de Fotos
             </h1>

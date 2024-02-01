@@ -1,13 +1,15 @@
-document.getElementById('mobile-menu').addEventListener('click', function () {
-    document.querySelector('.cabecalho__menu').classList.toggle('show');
-});
+const form = document.getElementById('login-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-document.addEventListener('click', function (event) {
-    const mobileMenu = document.querySelector('.cabecalho__menu');
-    const mobileMenuToggle = document.getElementById('mobile-menu');
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-    if (!mobileMenu.contains(event.target) && event.target !== mobileMenuToggle) {
-        // Fecha o menu se o clique não estiver dentro do menu ou no ícone do hamburguer
-        mobileMenu.classList.remove('show');
-    }
+  // Verify if the entered email and password match the expected values
+  if (email === 'Muna Vongs' && password === 'Amo_o_gzin') {
+    // Redirect to another page or perform other actions
+    window.location.href = 'main.html';
+  } else {
+    alert('Invalid email or password');
+  }
 });
