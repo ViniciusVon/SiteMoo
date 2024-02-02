@@ -141,6 +141,6 @@ form .btn input[type="submit"]{
 
 @media (max-width: 768px){
   .wrapper{
-    width: 70%;
+    width: 120%;
   }
 }
