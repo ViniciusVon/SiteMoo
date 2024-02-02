@@ -43,7 +43,7 @@ input[type="radio"]{
   display: none;
 }
 
-#login:checked ~ label.signup{
+#login:checked{
   color: #000;
 }
 #login:checked ~ label.login{
@@ -139,8 +139,9 @@ form .btn input[type="submit"]{
   cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media(max-width : 768px){
   .wrapper{
-    width: 120%;
+    height: 720px;
+    padding: 200%;
   }
 }
