@@ -186,20 +186,6 @@ body {
     color: var(--cor-terciaria);
 }
 
-.menu-toggle {
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: 0.4s;
-}
-
 .cabecalho__menu ul {
     list-style: none;
     display: flex;
@@ -212,7 +198,6 @@ body {
 @media (max-width: 1200px){
     .cabecalho{
         padding: 10%;
-
     }
 
     .cabecalho__menu{
@@ -225,30 +210,27 @@ body {
     }
 
     .apresentacao__conteudo{
-        width:  auto;
+        width: auto;
     }
 }
-  
+
 @media only screen and (max-width: 768px) {
-    .menu-toggle {
-      display: flex;
-    }
-    .cabecalho__menu{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    .cabecalho__menu.show {
-        display: flex;
-        opacity: 1;
-    }
+  .cabecalho__menu{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      opacity: 0;
+      transition: opacity 0.3s ease;
   }
+  .cabecalho__menu.show {
+      display: flex;
+      opacity: 1;
+  }
+}
 
 /*Sidebar telegram*/
 .sidebar{
@@ -332,38 +314,6 @@ body {
     margin-left: 245px;
     opacity: 1;
     visibility: visible;
-  }
-  @media(max-width : 860px){
-    .sidebar{
-      height: auto;
-      width: 70px;
-      left: 0;
-      margin: 100px 0;
-      opacity: 0.3;
-    }
-    header,#btn,#cancel{
-      display: none;
-    }
-    span{
-      position: absolute;
-      margin-left: 23px;
-      opacity: 0;
-      visibility: hidden;
-    }
-    .sidebar a{
-      height: 60px;
-    }
-    .sidebar a i{
-      margin-left: -10px;
-    }
-    a:hover {
-      width: 200px;
-      background: inherit;
-    }
-    .sidebar a:hover span{
-      opacity: 1;
-      visibility: visible;
-    }
   }
   
   .sidebar > a.active,.sidebar > a:hover:nth-child(even) {
