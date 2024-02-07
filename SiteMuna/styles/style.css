@@ -2,14 +2,14 @@
 @import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 
 :root {
-    --cor-primaria: #0A4D68;
-    --cor-secundaria: #088395;
-    --cor-terciaria: #05BFDB;
-    --cor-hover: #00FFCA;
-    --cor-preto: #000000;
+  --cor-primaria: #0A4D68;
+  --cor-secundaria: #088395;
+  --cor-terciaria: #05BFDB;
+  --cor-hover: #00FFCA;
+  --cor-preto: #000000;
 
-    --fonte-krona: 'Krona One', sans-serif;
-    --fonte-montserrat: 'Montserrat', sans-serif;
+  --fonte-krona: 'Krona One', sans-serif;
+  --fonte-montserrat: 'Montserrat', sans-serif;
 }
 
 *{
@@ -18,10 +18,10 @@
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    min-height: 100%;
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  min-height: 100%;
 }
  
 .cabecalho{
@@ -170,13 +170,12 @@ body {
 .rodape{
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
-    padding: 24px;
+    padding: auto;
     text-align: center;
     font-family: var(--fonte-montserrat);
     font-size: 1.5rem;
-    font-weight: 400;
     margin-top: auto;
-    position: bottom;
+    position:bottom;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -217,110 +216,98 @@ body {
 @media only screen and (max-width: 768px) {
   .cabecalho__menu{
       display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-  }
-  .cabecalho__menu.show {
-      display: flex;
-      opacity: 1;
   }
 }
 
 /*Sidebar telegram*/
 .sidebar{
-    position: fixed;
-    width: 240px;
-    left: -240px;
-    height: 100%;
-    background-color: #fff;
-    transition: all .5s ease;
-  }
-  .sidebar header{
-    font-size: 28px;
-    color: #353535;
-    line-height: 70px;
-    text-align: center;
-    background-color: #fff;
-    user-select: none;
-    font-family: 'Lato', sans-serif;
-  }
-  .sidebar a{
-    display: block;
-    height: 65px;
-    width: 100%;
-    color: #353535;
-    line-height: 65px;
-    padding-left: 30px;
-    box-sizing: border-box;
-    border-left: 5px solid transparent;
-    font-family: 'Lato', sans-serif;
-    transition: all .5s ease;
-  }
-  a.active,a:hover{
-    border-left: 5px solid var(--accent-color);
-    color: #000000;
-     background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
-  }
-  .sidebar a i{
-    font-size: 23px;
-    margin-right: 16px;
-  }
-  .sidebar a span{
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  #check{
-    display: none;
-  }
-  label #btn,label #cancel{
-    position: absolute;
-    left: 5px;
-    cursor: pointer;
-    color: #d6adff;
-    border-radius: 5px;
-    margin: 15px 30px;
-    font-size: 29px;
-    background-color: #22c2f3;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-      inset -7px -7px 10px 0px rgba(0,0,0,.1),
-     3.5px 3.5px 20px 0px rgba(0,0,0,.1),
-     2px 2px 5px 0px rgba(0,0,0,.1);
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-    line-height: 45px;
-    transition: all .5s ease;
-  }
-  label #cancel{
-    opacity: 0;
-    visibility: hidden;
-  }
-  #check:checked ~ .sidebar{
-    left: 0;
-  }
-  #check:checked ~ label #btn{
-    margin-left: 245px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  #check:checked ~ label #cancel{
-    margin-left: 245px;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .sidebar > a.active,.sidebar > a:hover:nth-child(even) {
-    --accent-color: #52d6f4;
-    --gradient-color: #c1b1f7;
-  }
-  .sidebar a.active,.sidebar > a:hover:nth-child(odd) {
-    --accent-color: #1686e2;
-    --gradient-color: #18def8;
-  }
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background-color: #fff;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: #353535;
+  line-height: 70px;
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+  font-family: 'Lato', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: #353535;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-left: 5px solid transparent;
+  font-family: 'Lato', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid var(--accent-color);
+  color: #000000;
+    background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+  color: #d6adff;
+  border-radius: 5px;
+  margin: 15px 30px;
+  font-size: 29px;
+  background-color: #22c2f3;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+    3.5px 3.5px 20px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1);
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar > a.active,.sidebar > a:hover:nth-child(even) {
+  --accent-color: #52d6f4;
+  --gradient-color: #c1b1f7;
+}
+.sidebar a.active,.sidebar > a:hover:nth-child(odd) {
+  --accent-color: #1686e2;
+  --gradient-color: #18def8;
+}
