@@ -12,6 +12,7 @@
   align-items: center;
   background: rgb(255, 255, 255);
   border-radius: 10px;
+  opacity: 0.95;
 }
 
 .navigation ul {
@@ -53,8 +54,8 @@
 }
 
 .navigation ul li.active a .icon {
-  transform: translateY(-8px);
   color: #0ABAB5;
+  filter: drop-shadow(0 0 10px #78f1ed) drop-shadow(0 0 20px #78f1ed);
 }
 
 .navigation ul li a .text {
@@ -69,10 +70,10 @@
   transform: translateY(0px);
 }
 
-.navigation ul li.active a .text {
+/*.navigation ul li.active a .text {
   transform: translateY(100%);
   opacity: 1;
-}
+} */
 
 .indicator {
   position: absolute;
@@ -91,9 +92,10 @@
   height: 20%;
   background: #0ABAB5;
   border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 20px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 30px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 50px rgba(0, 225, 255, 0.815));
 }
 
-.indicator::after {
+/*.indicator::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -105,7 +107,8 @@
     0 40px #0ABAB5;
   transform: rotate(45deg);
   animation: animate 2s ease-in-out infinite;
-}
+  filter: drop-shadow(0 0 10px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 20px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 30px rgba(0, 225, 255, 0.815)) drop-shadow(0 0 50px rgba(0, 225, 255, 0.815)) blur(5px);
+}*/
 
 @keyframes animate {
   0%,
